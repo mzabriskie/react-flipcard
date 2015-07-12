@@ -1,6 +1,6 @@
 {
   "name": "react-flipcard",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "React flip card component",
   "main": "lib/main.js",
   "scripts": {
