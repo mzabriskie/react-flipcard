@@ -77,6 +77,9 @@ var App = React.createClass({
         {/*
           The `disabled` attribute allows turning off the auto-flip
           on hover, or focus. This allows manual control over flipping.
+
+          The `flipped` attribute indicates whether to show the front,
+          or the back, with `true` meaning show the back.
         */}
         <FlipCard
           disabled={true}
