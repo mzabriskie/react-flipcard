@@ -17,7 +17,7 @@
   "license": "MIT",
   "ignore": [
     "**/.*",
-    "**/__test__",
+    "**/__tests__",
     "build",
     "examples",
     "lib",
