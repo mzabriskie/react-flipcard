@@ -12,7 +12,7 @@ $ bower install react-flipcard
 
 ## Demo
 
-[http://mzabriskie.github.io/react-flipcard/examples/basic](http://mzabriskie.github.io/react-flipcard/examples/basic)
+[http://mzabriskie.github.io/react-flipcard/basic](http://mzabriskie.github.io/react-flipcard/basic)
 
 ## Example
 
