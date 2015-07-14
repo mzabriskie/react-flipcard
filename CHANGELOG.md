@@ -1,3 +1,9 @@
+v0.1.2 - Tue, 14 Jul 2015 04:52:52 GMT
+--------------------------------------
+
+- [6d1c2a1](../../commit/6d1c2a1) [fixed] Hiding flipped side to prevent tab focus
+
+
 v0.1.1 - Sun, 12 Jul 2015 11:24:57 GMT
 --------------------------------------
 
