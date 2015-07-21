@@ -1,7 +1,7 @@
 import React from 'react';
 import FlipCard from '../../lib/main';
 
-var App = React.createClass({
+let App = React.createClass({
   getInitialState() {
     return {
       isFlipped: false
@@ -54,7 +54,7 @@ var App = React.createClass({
           </div>
           <div>Back</div>
         </FlipCard>
-        
+
         {/*
           The `disabled` attribute allows turning off the auto-flip
           on hover, or focus. This allows manual control over flipping.
