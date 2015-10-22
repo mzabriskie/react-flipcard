@@ -1,28 +1,18 @@
 import React from 'react';
+import DOM from 'react-dom';
 import FlipCard from '../../lib/main';
 
-let App = React.createClass({
+
+const App = React.createClass({
   getInitialState() {
     return {
       isFlipped: false
     };
   },
 
-  showBack() {
-    this.setState({
-      isFlipped: true
-    });
-  },
-
-  showFront() {
-    this.setState({
-      isFlipped: false
-    });
-  },
-
   handleOnFlip(flipped) {
     if (flipped) {
-      this.refs.backButton.getDOMNode().focus();
+      this.refs.backButton.focus();
     }
   },
 
@@ -80,7 +70,19 @@ let App = React.createClass({
         </FlipCard>
       </div>
     );
+  },
+
+  showBack() {
+    this.setState({
+      isFlipped: true
+    });
+  },
+
+  showFront() {
+    this.setState({
+      isFlipped: false
+    });
   }
 });
 
-React.render(<App/>, document.getElementById('example'));
+DOM.render(<App/>, document.getElementById('example'));
