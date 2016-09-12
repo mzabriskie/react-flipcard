@@ -21,14 +21,14 @@
   },
   "homepage": "https://github.com/mzabriskie/react-flipcard",
   "devDependencies": {
-    "rackt-cli": "^0.5.3",
-    "react": "^0.14.0",
-    "react-addons-test-utils": "^0.14.0",
-    "react-dom": "^0.14.0"
+    "rackt-cli": "^0.6.1",
+    "react": "^15.3.1",
+    "react-addons-test-utils": "^15.3.1",
+    "react-dom": "^15.3.1"
   },
   "peerDependencies": {
-    "react": "^0.14.0",
-    "react-dom": "^0.14.0"
+    "react": "^0.14.0 || ^15.0.0",
+    "react-dom": "^0.14.0 || ^15.0.0"
   },
   "dependencies": {
     "classnames": "^2.2.0"

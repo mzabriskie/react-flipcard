@@ -53,7 +53,7 @@ const App = React.createClass({
           or the back, with `true` meaning show the back.
         */}
         <FlipCard
-          disabled={true}
+          disabled
           flipped={this.state.isFlipped}
           onFlip={this.handleOnFlip}
           onKeyDown={this.handleKeyDown}
