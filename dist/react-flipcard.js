@@ -257,7 +257,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	  _hideFlippedSide: function _hideFlippedSide() {
 	    // This prevents the flipped side from being tabbable
-	    if (this.props.disabled) {
+	    if (this.props.disabled && this.refs.front && this.refs.back) {
 	      if (this.state.isFlipped) {
 	        this.refs.front.style.display = 'none';
 	      } else {
