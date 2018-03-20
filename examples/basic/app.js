@@ -3,24 +3,29 @@ import DOM from 'react-dom';
 import FlipCard from '../../lib/main';
 
 
-const App = React.createClass({
-  getInitialState() {
-    return {
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
       isFlipped: false
     };
-  },
+    this.handleOnFlip = this.handleOnFlip.bind(this);
+    this.handleKeyDown = this.handleKeyDown.bind(this);
+    this.showBack = this.showBack.bind(this);
+    this.showFront = this.showFront.bind(this);
+  }
 
   handleOnFlip(flipped) {
     if (flipped) {
       this.refs.backButton.focus();
     }
-  },
+  }
 
   handleKeyDown(e) {
     if (this.state.isFlipped && e.keyCode === 27) {
       this.showFront();
     }
-  },
+  }
 
   render() {
     return (
@@ -53,7 +58,7 @@ const App = React.createClass({
           or the back, with `true` meaning show the back.
         */}
         <FlipCard
-          disabled={true}
+          disabled
           flipped={this.state.isFlipped}
           onFlip={this.handleOnFlip}
           onKeyDown={this.handleKeyDown}
@@ -70,19 +75,19 @@ const App = React.createClass({
         </FlipCard>
       </div>
     );
-  },
+  }
 
   showBack() {
     this.setState({
       isFlipped: true
     });
-  },
+  }
 
   showFront() {
     this.setState({
       isFlipped: false
     });
   }
-});
+}
 
 DOM.render(<App/>, document.getElementById('example'));
