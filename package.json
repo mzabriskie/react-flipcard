@@ -22,15 +22,17 @@
   "homepage": "https://github.com/mzabriskie/react-flipcard",
   "devDependencies": {
     "rackt-cli": "^0.5.3",
-    "react": "^0.14.0",
+    "react": "^16.2.0",
     "react-addons-test-utils": "^0.14.0",
-    "react-dom": "^0.14.0"
+    "react-dom": "^16.2.0"
   },
   "peerDependencies": {
-    "react": "^0.14.0",
-    "react-dom": "^0.14.0"
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "prop-types": "15.6.1"
   },
   "dependencies": {
-    "classnames": "^2.2.0"
+    "classnames": "^2.2.0",
+    "prop-types": "^15.6.1"
   }
 }
